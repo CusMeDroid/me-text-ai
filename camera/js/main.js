@@ -8,7 +8,38 @@ var webkam = {
     webkam.hGo = document.getElementById("go"),
     webkam.hRes = document.getElementById("result");
 
+    function handleVideo(cameraFacing) {
+      const constraints = {
+        video: {
+          facingMode: {
+            exact: cameraFacing
+          }
+        }
+      }
+      return constraints
+    };
     
+    function turnVideo(constraints) {
+      let video;
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          video = webkam.hVid
+          video.srcObject = stream
+          video.play()
+          video.onloadeddata = () => {
+            ctx.height = video.videoHeight
+          }
+        })
+    
+    }
+    
+    document.querySelector(".frontCamera").addEventListener("click", () => {
+      turnVideo(handleVideo("user"));
+    })
+    document.querySelector(".backCamera").addEventListener("click", () => {
+      turnVideo(handleVideo("environment"));
+    })
+
     navigator.mediaDevices.getUserMedia({ video: true })
     .then(async (stream) => {
       
