@@ -23,7 +23,7 @@ body {
   border: 1px solid black;
 }
 #cbinfo {
-  padding: 10px; margin-top: 40px;
+  padding: 10px; margin-top: 10px;
   font-weight: 700; text-align: center;
 }
 #cbinfo a {
@@ -43,4 +43,5 @@ body {
     border-radius: 10px;
     border: 1px solid black;
   }
+  #vid { height: 320px; }
 }
