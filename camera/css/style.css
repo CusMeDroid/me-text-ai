@@ -6,15 +6,21 @@ body {
   display: flex; justify-content: center; align-items: center;
   background-color: transparent;
 }
+.frontCamera {
+  padding: 8px 18px;
+  background: green;
+  border: 0;
+}
+.backCamera {
+  padding: 8px 18px;
+  background: red;
+  border: 0;
+}
 #cbwrap {
   background: rgba(255, 255, 255, 0.9);
   width: 600px; padding: 20px;
   border-radius: 10px;
   border: 1px solid black;
-}
-#cbtitle {
-  margin-bottom: 40px;
-  text-transform: uppercase;
 }
 #cbinfo {
   padding: 10px; margin-top: 40px;
@@ -32,7 +38,7 @@ body {
 @media only screen and (max-width: 600px) {
   #cbwrap {
     background: rgba(255, 255, 255, 0.9);
-    width: 80%; 
+    width: 90%; 
     padding: 20px;
     border-radius: 10px;
     border: 1px solid black;
