@@ -23,8 +23,8 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 ```
 
 # Android
-1. > WebView
-2. > Google Voice
+1. > [WebView](https://cusmedroid.github.io/me-text-ai/camera/)
+2. > [Google Voice](https://google.com/search?q=google+voice+to+text)
 
 # Sematkan
 ``` html
