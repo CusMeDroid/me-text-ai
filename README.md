@@ -6,6 +6,7 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 
 # Muat
 > [Lib Tesseract](https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js)
+
 > [Speech To Text](https://www.tutorialspoint.com/how-to-convert-speech-to-text-using-javascript)
 
 # Meta
