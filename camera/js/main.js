@@ -59,6 +59,10 @@ var webkam = {
 
       webkam.hVid.srcObject = stream;
       webkam.hGo.onclick = webkam.snap;
+      
+      mVid.style.display = "none";
+      mView.style.display = "block";
+      mBtm.style.display = "none";
     })
     .catch(err => console.error(err));
   },
@@ -78,12 +82,6 @@ var webkam = {
   },
 };
 window.addEventListener("load", webkam.init);
-
-function sMbow() {
-  mVid.style.display = "none";
-  mView.style.display = "block";
-  mBtm.style.display = "none";
-}
 
 function sClose() {
   mVid.style.display = "block";
