@@ -22,6 +22,10 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 
 ```
 
+# Dasar Bahasa Teks AI
+- English
+- Indonesia (I don't think so)
+
 # Android
 1. > [WebView Camera](https://cusmedroid.github.io/me-text-ai/camera/)
 2. > [WebView Voice](https://cusmedroid.github.io/me-text-ai/voice/)
