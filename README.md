@@ -2,7 +2,7 @@
 Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis teks dari gambar maupun suara.
 
 # Logo
-[Cooming Soon]()
+[Tahap Pertumbuhan]()
 
 # Muat
 > [Lib Tesseract](https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js)
@@ -22,8 +22,18 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 
 ```
 
+# Android
+1. > WebView
+2. > Google Voice
+
+# Sematkan
+``` html
+<!-- Camera -->
+<iframe border="0" src="https://cusmedroid.github.io/me-text-ai/camera/"></iframe>
+```
+
 # Tangkapan Layar
-[Cooming Soon]()
+[Tahap Pertumbuhan]()
 
 # Rilis
-[Cooming Soon]()
+[Tahap Pertumbuhan]()
