@@ -67,7 +67,19 @@ body {
   display: none;
   padding: 8px;
 }
+#vbrow {
+  display: none;
+  padding: 8px;
+}
 #result {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  height: 360px;
+  border: 1px solid #212121;
+  background: #FAFAFA;
+}
+#output {
   padding: 10px;
   width: 100%;
   resize: none;
