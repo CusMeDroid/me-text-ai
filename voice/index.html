@@ -12,7 +12,7 @@
    </head>
    <body id="myCopyright">
       <div id="voicerap">
-         <p id="action" style="display: none;"></p>
+         <p id="action"></p>
          <button onclick="runSpeechRecog()" id="vbtn"><i class="fa fa-microphone" aria-hidden="true"></i></button>
       </div>
       <div id="vbrow">
@@ -22,22 +22,30 @@
          </center>
       </div>
       <script>
-      runSpeechRecog = () => {
-            document.getElementById("output").innerHTML = "Memuat Teks...";
-            var output = document.getElementById('output');
-            var action = document.getElementById('action');
-            let recognization = new webkitSpeechRecognition();
-            recognization.onstart = () => {
-            action.innerHTML = "Mendengarkan...";
+         var mVoLay = document.getElementById('voicerap');
+         var mVoBrow = document.getElementById('vbrow');
+         runSpeechRecog = () => {
+               document.getElementById("output").innerHTML = "Memuat Teks...";
+               var output = document.getElementById('output');
+               var action = document.getElementById('action');
+               let recognization = new webkitSpeechRecognition();
+               recognization.onstart = () => {
+               action.innerHTML = "Mendengarkan...";
+            }
+            recognization.onresult = (e) => {
+               mVoLay.style.display = "none";
+               mVoBrow.style.display = "block";
+               var transcript = e.results[0][0].transcript;
+               output.innerHTML = transcript;
+               output.classList.remove("hide")
+               action.innerHTML = "";
+            }
+            recognization.start();
          }
-         recognization.onresult = (e) => {
-            var transcript = e.results[0][0].transcript;
-            output.innerHTML = transcript;
-            output.classList.remove("hide")
-            action.innerHTML = "";
+         function vClose() {  
+            mVoLay.style.display = "block";
+            mVoBrow.style.display = "none";
          }
-         recognization.start();
-      }
       </script>
       <script src="https://cusmedroid.github.io/js/disclaimer.js"></script>
    </body>
