@@ -27,6 +27,7 @@ var webkam = {
           video.srcObject = stream
           video.play()
           video.onloadeddata = () => {
+            ctx.width = video.videoWidth
             ctx.height = video.videoHeight
           }
         })
