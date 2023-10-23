@@ -8,7 +8,7 @@ var webkam = {
   init : () => {
     
     webkam.hVid = document.getElementById("vid"),
-    webkam.hGo = document.getElementById("go"),
+    webkam.hGo = document.getElementById("shoot"),
     webkam.hRes = document.getElementById("result");
 
     function handleVideo(cameraFacing) {
