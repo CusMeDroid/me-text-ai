@@ -64,13 +64,19 @@ var webkam = {
     canvas.height = vHeight;
     ctx.drawImage(webkam.hVid, 0, 0, vWidth, vHeight);
 
-    // stop both mic and camera
-    function stopBothVideoAndAudio(stream) {
-        stream.getTracks().forEach((track) => {
-            if (track.readyState == 'live') {
-                track.stop();
-            }
-        });
+    function turnVideo(constraints) {
+      let video;
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          video = webkam.hVid
+          video.srcObject = stream
+          video.stop()
+          video.onloadeddata = () => {
+            ctx.width = video.videoWidth
+            ctx.height = video.videoHeight
+          }
+        })
+    
     }
 
     const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
