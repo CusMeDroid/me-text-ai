@@ -1,7 +1,7 @@
 var mFront = document.getElementById("front");
 var mBack = document.getElementById("back");
 var mBtm = document.getElementById("btm");
-var mVid = document.getElementById("vid");
+var mVid = document.getElementById("mewrap");
 var mView = document.getElementById("brow");
 
 var webkam = {
@@ -10,7 +10,7 @@ var webkam = {
   hVid : null, hGo :null, hRes : null, // html elements
   init : () => {
     
-    webkam.hVid = mVid,
+    webkam.hVid = document.getElementById("vid"),
     webkam.hGo = document.getElementById("shoot"),
     webkam.hRes = document.getElementById("result");
 
@@ -59,10 +59,6 @@ var webkam = {
 
       webkam.hVid.srcObject = stream;
       webkam.hGo.onclick = webkam.snap;
-      
-      mVid.style.display = "none";
-      mView.style.display = "block";
-      mBtm.style.display = "none";
     })
     .catch(err => console.error(err));
   },
@@ -79,6 +75,10 @@ var webkam = {
 
     const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
     webkam.hRes.value = res.data.text;
+    
+    mVid.style.display = "none";
+    mView.style.display = "block";
+    mBtm.style.display = "none";
   },
 };
 window.addEventListener("load", webkam.init);
