@@ -3,6 +3,7 @@ body {
   font-family: arial, sans-serif;
   padding: 0;
   margin: 0;
+  background: #030000;
 }
 .frontCamera {
   padding: 8px 18px;
@@ -52,6 +53,9 @@ body {
 #mewrap {
   margin: 0 auto;
   width: 100%;
+}
+#brow {
+  diaplay: none;
 }
 #result {width: 100%;}
 #result {padding: 10px;}
