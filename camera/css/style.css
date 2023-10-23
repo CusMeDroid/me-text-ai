@@ -5,12 +5,6 @@ body {
   margin: 0;
   background: #030000;
 }
-.frontCamera {
-  padding: 8px 18px;
-  background: green;
-  border: 0;
-  color: #FFFFFF;
-}
 #front {
   display: none;
   background: #FFF;
@@ -23,12 +17,7 @@ body {
   height: 48px;
   bottom: 30px;
   right: 30px;
-}
-.backCamera {
-  padding: 8px 18px;
-  background: red;
-  border: 0;
-  color: #FFFFFF;
+  cursor: pointer;
 }
 #back {
   background: #FFF;
@@ -41,6 +30,7 @@ body {
   height: 48px;
   bottom: 30px;
   right: 30px;
+  cursor: pointer;
 }
 .mbabc {
   width: 100%;
@@ -67,11 +57,14 @@ body {
   background: #FAFAFA;
 }
 .close {
-  width: auto;
+  width: 56px;
+  height: 56px;
   font-size: 32px;
   background: #FFF;
   color: #000;
   border-radius: 100%;
+  padding-top: 10px;
+  cursor: pointer;
 }
 #vid {width: 100%; height: 100%;}
 #shoot {
