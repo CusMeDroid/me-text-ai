@@ -19,21 +19,6 @@ var webkam = {
       return constraints
     };
     
-    function turnVideo(constraints) {
-      let video;
-      navigator.mediaDevices.getUserMedia(constraints)
-        .then((stream) => {
-          video = webkam.hVid
-          video.srcObject = stream
-          video.play()
-          video.onloadeddata = () => {
-            ctx.width = video.videoWidth
-            ctx.height = video.videoHeight
-          }
-        })
-    
-    }
-    
     document.querySelector(".frontCamera").addEventListener("click", () => {
       turnVideo(handleVideo("user"));
     })
@@ -63,21 +48,6 @@ var webkam = {
     canvas.width = vWidth;
     canvas.height = vHeight;
     ctx.drawImage(webkam.hVid, 0, 0, vWidth, vHeight);
-
-    function turnVideo(constraints) {
-      let video;
-      navigator.mediaDevices.getUserMedia(constraints)
-        .then((stream) => {
-          video = webkam.hVid
-          video.srcObject = stream
-          video.stop()
-          video.onloadeddata = () => {
-            ctx.width = video.videoWidth
-            ctx.height = video.videoHeight
-          }
-        })
-    
-    }
 
     const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
     webkam.hRes.value = res.data.text;
