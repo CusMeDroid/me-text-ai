@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="in">
+<html>
    <head>
    <meta charset='UTF-8'>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -16,19 +16,19 @@
          <button onclick="runSpeechRecog()"><i class="fa fa-microphone" aria-hidden="true"></i></button>
       </div>
       <div id="vbrow">
-         <textarea id="output" class="hide">Hasil Suara ke Teks akan ditampilkan di sini.</textarea>
+         <h1 id="output" class="hide"></h1>
          <center style="padding: 8px;">
             <div class="close" onclick="vClose()"><i class="fa fa-times" aria-hidden="true"></i></div>
          </center>
       </div>
       <script>
       runSpeechRecog = () => {
-            document.getElementById("output").innerHTML = "Loading text...";
+            document.getElementById("output").innerHTML = "Memuat Teks...";
             var output = document.getElementById('output');
             var action = document.getElementById('action');
             let recognization = new webkitSpeechRecognition();
             recognization.onstart = () => {
-            action.innerHTML = "Listening...";
+            action.innerHTML = "Mendengarkan...";
          }
          recognization.onresult = (e) => {
             var transcript = e.results[0][0].transcript;
