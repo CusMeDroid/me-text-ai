@@ -20,9 +20,16 @@ body {
   border: 0;
   color: #FFFFFF;
 }
+.mbabc {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background: #030000;
+}
 #cbwrap {
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
   /*
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
@@ -38,10 +45,10 @@ body {
   text-decoration: none; padding: 5px;
   color: #fff; background: #212121;
 }
-#vid, #go, #result { width: 100%; }
-#go, #result { padding: 10px; }
+#result { width: 100%; }
+#result { padding: 10px; }
 #vid { height: 400px; }
-#go { color: #fff; background: #212121; border: 0; cursor: pointer; }
+#go { width: 96px; height: 96px; border-radius: 100%; font-size: 32px; color: #fff; background: white; border: 0; cursor: pointer; }
 #result { resize: none; height: 100px; border: 1px solid #212121; background: #FAFAFA; }
 @media only screen and (max-width: 600px) {
   #cbwrap {
