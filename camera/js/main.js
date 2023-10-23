@@ -1,2 +1,91 @@
 /* Powered by CusMeDroid */
-var mFront=document.getElementById("front"),mBack=document.getElementById("back"),mBtm=document.getElementById("btm"),mVid=document.getElementById("mewrap"),mView=document.getElementById("brow"),webkam={worker:null,hVid:null,hGo:null,hRes:null,init:()=>{function e(e){return{video:{facingMode:{exact:e}}}}function t(e){let t;navigator.mediaDevices.getUserMedia(e).then((e=>{t=webkam.hVid,t.srcObject=e,t.play(),t.onloadeddata=()=>{ctx.width=t.videoWidth,ctx.height=t.videoHeight}}))}webkam.hVid=document.getElementById("vid"),webkam.hGo=document.getElementById("shoot"),webkam.hRes=document.getElementById("result"),document.querySelector(".frontCamera").addEventListener("click",(()=>{t(e("user")),mFront.style.display="none",mBack.style.display="block"})),document.querySelector(".backCamera").addEventListener("click",(()=>{t(e("environment")),mFront.style.display="block",mBack.style.display="none"})),navigator.mediaDevices.getUserMedia({video:!0}).then((async e=>{webkam.worker=await Tesseract.createWorker(),await webkam.worker.loadLanguage("eng"),await webkam.worker.initialize("eng"),webkam.hVid.srcObject=e,webkam.hGo.onclick=webkam.snap})).catch((e=>console.error(e)))},snap:async()=>{let e=document.createElement("canvas"),t=e.getContext("2d"),a=webkam.hVid.videoWidth,n=webkam.hVid.videoHeight;e.width=a,e.height=n,t.drawImage(webkam.hVid,0,0,a,n);const i=await webkam.worker.recognize(e.toDataURL("image/png"));webkam.hRes.value=i.data.text,mVid.style.display="none",mView.style.display="block",mBtm.style.display="none"}};function sClose(){mVid.style.display="block",mView.style.display="none",mBtm.style.display="block"}window.addEventListener("load",webkam.init);
+var mFront = document.getElementById("front");
+var mBack = document.getElementById("back");
+var mBtm = document.getElementById("btm");
+var mVid = document.getElementById("mewrap");
+var mView = document.getElementById("brow");
+
+var webkam = {
+  
+  worker : null,
+  hVid : null, hGo :null, hRes : null,
+  init : () => {
+    
+    webkam.hVid = document.getElementById("vid"),
+    webkam.hGo = document.getElementById("shoot"),
+    webkam.hRes = document.getElementById("result");
+
+    function handleVideo(cameraFacing) {
+      const constraints = {
+        video: {
+          facingMode: {
+            exact: cameraFacing
+          }
+        }
+      }
+      return constraints
+    };
+
+    function turnVideo(constraints) {
+      let video;
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          video = webkam.hVid
+          video.srcObject = stream
+          video.play()
+          video.onloadeddata = () => {
+            ctx.width = video.videoWidth
+            ctx.height = video.videoHeight
+          }
+        })
+    }
+    
+    document.querySelector(".frontCamera").addEventListener("click", () => {
+      turnVideo(handleVideo("user"));
+      mFront.style.display = "none";
+      mBack.style.display = "block";
+    })
+    document.querySelector(".backCamera").addEventListener("click", () => {
+      turnVideo(handleVideo("environment"));
+      mFront.style.display = "block";
+      mBack.style.display = "none";
+    })
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+    .then(async (stream) => {
+      
+      webkam.worker = await Tesseract.createWorker();
+      await webkam.worker.loadLanguage("eng");
+      await webkam.worker.initialize("eng");
+
+      webkam.hVid.srcObject = stream;
+      webkam.hGo.onclick = webkam.snap;
+    })
+    .catch(err => console.error(err));
+  },
+
+  snap : async () => {
+    let canvas = document.createElement("canvas"),
+    ctx = canvas.getContext("2d"),
+    vWidth = webkam.hVid.videoWidth,
+    vHeight = webkam.hVid.videoHeight;
+
+    canvas.width = vWidth;
+    canvas.height = vHeight;
+    ctx.drawImage(webkam.hVid, 0, 0, vWidth, vHeight);
+
+    const res = await webkam.worker.recognize(canvas.toDataURL("image/png"));
+    webkam.hRes.value = res.data.text;
+    
+    mVid.style.display = "none";
+    mView.style.display = "block";
+    mBtm.style.display = "none";
+  },
+};
+window.addEventListener("load", webkam.init);
+
+function sClose() {
+  mVid.style.display = "block";
+  mView.style.display = "none";
+  mBtm.style.display = "block";
+}
