@@ -50,17 +50,17 @@ body {
 #voicerap {
   text-align: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20%;
   color: #FFF;
 }
 #vbtn {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   font-size: 32px;
   background: #FFF;
   color: #000;
+  border: none;
   border-radius: 100%;
-  padding-top: 10px;
   cursor: pointer;
 }
 #brow {
@@ -108,4 +108,9 @@ body {
   background: white;
   border: 0;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  #voicerap {
+    padding-top: 60%;
+  }
 }
