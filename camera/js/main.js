@@ -18,6 +18,20 @@ var webkam = {
       }
       return constraints
     };
+
+    function turnVideo(constraints) {
+      let video;
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          video = webkam.hVid
+          video.srcObject = stream
+          video.play()
+          video.onloadeddata = () => {
+            ctx.width = video.videoWidth
+            ctx.height = video.videoHeight
+          }
+        })
+    }
     
     document.querySelector(".frontCamera").addEventListener("click", () => {
       turnVideo(handleVideo("user"));
@@ -40,6 +54,19 @@ var webkam = {
   },
 
   snap : async () => {
+    function turnVideo(constraints) {
+      let video;
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          video = webkam.hVid
+          video.srcObject = stream
+          video.pause()
+          video.onloadeddata = () => {
+            ctx.width = video.videoWidth
+            ctx.height = video.videoHeight
+          }
+        })
+    }
     let canvas = document.createElement("canvas"),
     ctx = canvas.getContext("2d"),
     vWidth = webkam.hVid.videoWidth,
