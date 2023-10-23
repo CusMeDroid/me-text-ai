@@ -1,3 +1,6 @@
+var mFront = document.getElementById("front");
+var mBack = document.getElementById("back");
+
 var webkam = {
   
   worker : null, // tesseract worker
@@ -35,9 +38,13 @@ var webkam = {
     
     document.querySelector(".frontCamera").addEventListener("click", () => {
       turnVideo(handleVideo("user"));
+      mFront.style.display = "none";
+      mBack.style.display = "block";
     })
     document.querySelector(".backCamera").addEventListener("click", () => {
       turnVideo(handleVideo("environment"));
+      mFront.style.display = "block";
+      mBack.style.display = "none";
     })
 
     navigator.mediaDevices.getUserMedia({ video: true })
