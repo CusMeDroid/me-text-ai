@@ -23,13 +23,15 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 ```
 
 # Android
-1. > [WebView](https://cusmedroid.github.io/me-text-ai/camera/)
-2. > [Google Voice](https://google.com/search?q=google+voice+to+text)
+1. > [WebView Camera](https://cusmedroid.github.io/me-text-ai/camera/)
+2. > [WebView Voice](https://cusmedroid.github.io/me-text-ai/voice/)
 
 # Sematkan
 ``` html
 <!-- Camera -->
 <iframe border="0" src="https://cusmedroid.github.io/me-text-ai/camera/"></iframe>
+<!-- Voice -->
+<iframe border="0" src="https://cusmedroid.github.io/me-text-ai/voice/"></iframe>
 ```
 
 # Tangkapan Layar
