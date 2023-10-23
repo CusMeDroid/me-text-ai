@@ -35,8 +35,8 @@ body {
 #vid, #go, #result { width: 100%; }
 #go, #result { padding: 10px; }
 #vid { height: 400px; }
-#go { color: #fff; background: #c0bfff; border: 0; cursor: pointer; }
-#result { resize: none; height: 100px; border: 1px solid #c0bfff; background: #dceaff; }
+#go { color: #fff; background: #212121; border: 0; cursor: pointer; }
+#result { resize: none; height: 100px; border: 1px solid #212121; background: #FAFAFA; }
 @media only screen and (max-width: 600px) {
   #cbwrap {
     background: rgba(255, 255, 255, 0.9);
