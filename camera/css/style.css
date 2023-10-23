@@ -55,7 +55,7 @@ body {
   width: 100%;
 }
 #brow {
-  diaplay: none;
+  display: none;
 }
 #result {width: 100%;}
 #result {padding: 10px;}
