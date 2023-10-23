@@ -1,15 +1,25 @@
+<!DOCTYPE html>
 <html>
-<head>
-   <title>Me Text AI</title>
-</head>
-   <body>
-      <div class="speaker" style="display: flex;justify-content: space-between;width: 13rem;box-shadow: 0 0 13px #0000003d;border-radius: 5px;">
-         <p id="action" style="color: grey;font-weight: 800; padding: 0; padding-left: 2rem;"></p>
-         <button onclick="runSpeechRecog()" style="border: transparent;padding: 0 0.5rem;">
-            Speech
-         </button>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Me Text AI - Camera</title>
+    <meta name='description' content='Me Text AI adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis teks dari gambar maupun suara.'>
+    <meta name='keywords' content='cusmedroid, cusme, iyortml, suryodwijayanto, metextai, me-text-ai'/>
+    <meta name='author' content='Me Text AI'>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link rel='stylesheet' href='https://cusmedroid.github.io/fontawesome-4/css/font-awesome.min.css'>
+  </head>
+  <body id="myCopyright">
+      <div id="voicerap">
+         <button onclick="runSpeechRecog()"><i class="fa fa-microphone" aria-hidden="true"></i></button>
       </div>
-      <h3 id="output" class="hide"></h3>
+      <div id="vbrow">
+         <textarea id="output" class="hide">Hasil Suara ke Teks akan ditampilkan di sini.</textarea>
+         <center style="padding: 8px;">
+           <div class="close" onclick="vClose()"><i class="fa fa-times" aria-hidden="true"></i></div>
+         </center>
+      </div>
       <script>
          runSpeechRecog = () => {
             document.getElementById("output").innerHTML = "Loading text...";
@@ -28,5 +38,7 @@
             recognization.start();
          }
       </script>
-   </body>
+    <script src="https://cusmedroid.github.io/js/disclaimer.js"></script>
+    <script src="https://cusmedroid.github.io/js/main23102023.js"></script>
+  </body>
 </html>
