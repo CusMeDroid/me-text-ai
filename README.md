@@ -2,7 +2,7 @@
 Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis teks dari kamera maupun suara.
 
 # Logo
-[Tahap Pertumbuhan]()
+[<img alt="Me Text AI" title="Me Text AI" width="20%" src="assets/logo/ic_launcher_metextai_round.png" />](https://cusmedroid.github.io/me-text-ai/assets/logo/ic_launcher_metextai_round.png) [<img alt="Me Text AI" title="Me Text AI" width="20%" src="assets/logo/ic_launcher_metextai.png" />](https://cusmedroid.github.io/me-text-ai/assets/logo/ic_launcher_metextai.png)
 
 # Muat
 > [Lib Tesseract](https://tesseract.projectnaptha.com)
@@ -41,7 +41,7 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 ```
 
 # Tangkapan Layar
-[Tahap Pertumbuhan]()
+[<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_01.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_01.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_02.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_02.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_03.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_03.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_04.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_04.jpg)
 
 # Rilis
 [Tahap Pertumbuhan]()
