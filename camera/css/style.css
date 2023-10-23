@@ -56,9 +56,23 @@ body {
 }
 #brow {
   display: none;
+  padding: 8px;
 }
-#result {width: 100%;}
-#result {padding: 10px;}
+#result {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  height: 200px;
+  border: 1px solid #212121;
+  background: #FAFAFA;
+}
+.close {
+  width: auto;
+  font-size: 32px;
+  background: #FFF;
+  color: #000;
+  border-radius: 100%;
+}
 #vid {width: 100%; height: 100%;}
 #shoot {
   margin: 0 auto;
@@ -70,12 +84,6 @@ body {
   background: white;
   border: 0;
   cursor: pointer;
-}
-#result {
-  resize: none;
-  height: 100px;
-  border: 1px solid #212121;
-  background: #FAFAFA;
 }
 /*
 @media only screen and (max-width: 600px) {
