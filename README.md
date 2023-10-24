@@ -31,6 +31,8 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 # Android
 1. > [WebView Camera](https://cusmedroid.github.io/me-text-ai/camera/)
 2. > [WebView Voice](https://cusmedroid.github.io/me-text-ai/voice/)
+2. > [WebView Application Letter](https://cusmedroid.github.io/me-text-ai/application-letter/)
+2. > [WebView Current Location](https://cusmedroid.github.io/me-text-ai/current-location/)
 
 # Tangkapan Layar Aplikasi Android
 [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_phone_01.png" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_phone_01.png) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_phone_02.png" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_phone_02.png) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_phone_03.png" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_phone_03.png) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_phone_04.png" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_phone_04.png)
