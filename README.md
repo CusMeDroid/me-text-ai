@@ -17,10 +17,10 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
      ---------------------------
     |                           |
   Tombol                      Tombol
-  Kamera                      Suara
+  Kamera AI                   Suara AI
     |                           |
   Tombol                      Tombol
-  Surat Lamaran               Lokasi saat ini
+  Pesan AI                    Lokasi AI
     |                           |
   Tombol                      Tombol
   Bersihkan                   Ads Reward
@@ -44,7 +44,7 @@ Baca kebijakan [disini](https://cusmedroid.github.io/me-text-ai/privacy/)
 # Android
 1. > [WebView Camera](https://cusmedroid.github.io/me-text-ai/camera/)
 2. > [WebView Voice](https://cusmedroid.github.io/me-text-ai/voice/)
-2. > [WebView Application Letter](https://cusmedroid.github.io/me-text-ai/application-letter/)
+2. > [WebView Message](https://cusmedroid.github.io/me-text-ai/message/)
 2. > [WebView Current Location](https://cusmedroid.github.io/me-text-ai/current-location/)
 
 # Tangkapan Layar Aplikasi Android
