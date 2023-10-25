@@ -7,9 +7,8 @@
   <li>Our application requires <b>Microphone</b> permission to voice to be converted into text display</li>
   <li>Our application requires <b>Location</b> permission to current location to be converted into text display</li>
 </ul>
-<p>Permissions are required for the app's usability functions, no data is stored by us.</p>
-
-<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us <a href="mailto:cusmedroidteam@gmail.com">CusMeDroid</a>.</p>
+<p>Permissions are required for the app's usability functions, no data is stored by us.<br>
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us <a href="mailto:cusmedroidteam@gmail.com">CusMeDroid</a>.</p>
 
 <h2>Log Files</h2>
 
