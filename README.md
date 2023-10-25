@@ -19,10 +19,21 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
   Tombol                      Tombol
   Kamera                      Suara
     |                           |
- antarmuka                   antarmuka
- Kamera > Teks               Suara > Teks
+  Tombol                      Tombol
+  Surat Lamaran               Lokasi saat ini
+    |                           |
+  Tombol                      Tombol
+  Bersihkan                   Ads Reward
+    |                           |
+  Tombol                      Tombol
+  Bantuan                     Umpan balik
 
 ```
+
+# Izin
+1. > Camera
+2. > Microphone
+3. > Location
 
 # Dasar Bahasa Teks AI
 - English
