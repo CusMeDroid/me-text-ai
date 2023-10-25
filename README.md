@@ -35,6 +35,8 @@ Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis te
 2. > Microphone
 3. > Location
 
+Baca kebijakan [disini](https://cusmedroid.github.io/me-text-ai/privacy/)
+
 # Dasar Bahasa Teks AI
 - English
 - Indonesia (I don't think so)
