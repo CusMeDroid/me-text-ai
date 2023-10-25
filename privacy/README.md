@@ -3,9 +3,9 @@
 <p>At Me Text AI, accessible from <a href="https://cusmedroid.github.io/me-text-ai/">https://cusmedroid.github.io/me-text-ai/</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Me Text AI and how we use it.</p>
 <p>Permissions required :</p>
 <ul>
-  <li>Our application requires <b>Camera</b> permission to screen capture to be converted into text display</li>
-  <li>Our application requires <b>Microphone</b> permission to voice to be converted into text display</li>
-  <li>Our application requires <b>Location</b> permission to current location to be converted into text display</li>
+  <li>The application requires camera permission access to convert screen capture to text</li>
+  <li>The application requires access microphone permissions to convert voice to text.</li>
+  <li>The application requires access location permissions to get the current location and convert it into text.</li>
 </ul>
 <p>Permissions are required for the app's usability functions, no data is stored by us.<br>
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us <a href="mailto:cusmedroidteam@gmail.com">CusMeDroid</a>.</p>
