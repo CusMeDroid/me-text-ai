@@ -31,7 +31,7 @@ fetch(url)
 
         const mParaf1 = document.createElement('pre');
         mParaf1.setAttribute('class', 'patobo-8');
-        mParaf1.innerHTML = mKategori+"<br"+mDeskripsi;
+        mParaf1.innerHTML = mKategori+"<br>"+mDeskripsi;
 
         container.appendChild(mButton);
         container.appendChild(mContent);
