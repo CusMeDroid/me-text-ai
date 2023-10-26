@@ -2,7 +2,7 @@ let url = 'https://docs.google.com/spreadsheets/d/1ex4zW0WxE3dP7UhtqNrhxY7ufvTWE
 const lkjs = document.querySelector('.lkjs');
 const query = encodeURIComponent('Select B,C,D');
 var coll = document.getElementsByClassName("collapsible");
-var trump;
+var i;
 console.log(query);
 url = url + '&tq=' + query;
 
@@ -11,17 +11,6 @@ fetch(url)
 .then(rep => {
     const data = JSON.parse(rep.substr(47).slice(0,-2));
     const container = document.createElement('div');
-    for (trump = 0; trump < coll.length; trump++) {
-        coll[trump].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-    }
     data.table.rows.forEach((main)=>{
         lkjs.append(container);
         console.log(main.c[0]);
@@ -41,18 +30,24 @@ fetch(url)
         const mContent = document.createElement('div');
         mContent.setAttribute('class', 'content');
 
-        const mParaf1 = document.createElement('p');
+        const mParaf1 = document.createElement('pre');
         mParaf1.setAttribute('class', 'patobo-8');
-        mParaf1.innerHTML = mKategori;
-
-        const mParaf2 = document.createElement('pre');
-        mParaf2.setAttribute('class', 'patobo-8');
-        mParaf2.innerHTML = mDeskripsi;
+        mParaf1.innerHTML = mKategori+"<br"+mDeskripsi;
 
         container.appendChild(mButton);
         container.appendChild(mContent);
         mContent.appendChild(mParaf1);
-        mContent.appendChild(mParaf2);
-    });
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    })
     console.log(data);
-});
+})
