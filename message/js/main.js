@@ -12,6 +12,17 @@ fetch(url)
     const container = document.createElement('div');
     data.table.rows.forEach((main)=>{
         lkjs.append(container);
+        for (data.table.cols = 0; data.table.cols < coll.length; data.table.cols++) {
+            coll[data.table.cols].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
         console.log(main.c[0]);
         const kategori = main.c[0];
         console.log(main.c[1]);
@@ -31,22 +42,12 @@ fetch(url)
 
         const mParaf1 = document.createElement('pre');
         mParaf1.setAttribute('class', 'patobo-8');
-        mParaf1.innerHTML = mKategori+"<br>"+mDeskripsi;
+        mParaf1.style.overflow = "auto";
+        mParaf1.innerHTML = mKategori+"<br><hr><br>"+mDeskripsi;
 
         container.appendChild(mButton);
         container.appendChild(mContent);
         mContent.appendChild(mParaf1);
-        for (data.table.cols = 0; data.table.cols < coll.length; data.table.cols++) {
-            coll[data.table.cols].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
     })
     console.log(data);
 })
