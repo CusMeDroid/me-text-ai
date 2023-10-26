@@ -12,9 +12,9 @@ fetch(url)
     data.table.rows.forEach((main)=>{
     lkjs.append(container);
     console.log(main.c[0]);
-    const judul = main.c[0];
+    const kategori = main.c[0];
     console.log(main.c[1]);
-    const kategori = main.c[1];
+    const judul = main.c[1];
     console.log(main.c[2]);
     const deskripsi = main.c[2];
     const mJudul = judul.v;
