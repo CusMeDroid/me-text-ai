@@ -2,7 +2,6 @@ let url = 'https://docs.google.com/spreadsheets/d/1ex4zW0WxE3dP7UhtqNrhxY7ufvTWE
 const lkjs = document.querySelector('.lkjs');
 const query = encodeURIComponent('Select B,C,D');
 var coll = document.getElementsByClassName("collapsible");
-var i;
 console.log(query);
 url = url + '&tq=' + query;
 
@@ -37,15 +36,15 @@ fetch(url)
         container.appendChild(mButton);
         container.appendChild(mContent);
         mContent.appendChild(mParaf1);
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+        for (data = 0; data < coll.length; data++) {
+            coll[data].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
                 if (content.style.maxHeight){
                     content.style.maxHeight = null;
                 } else {
                     content.style.maxHeight = content.scrollHeight + "px";
-                } 
+                }
             });
         }
     })
