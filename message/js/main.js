@@ -6,54 +6,53 @@ var i;
 console.log(query);
 url = url + '&tq=' + query;
 
-fetch(url)
-.then(res => res.text())
+fetch(url);
+.then(res => res.text());
 .then(rep => {
     const data = JSON.parse(rep.substr(47).slice(0,-2));
     const container = document.createElement('div');
     data.table.rows.forEach((main)=>{
-    lkjs.append(container);
-    console.log(main.c[0]);
-    const kategori = main.c[0];
-    console.log(main.c[1]);
-    const judul = main.c[1];
-    console.log(main.c[2]);
-    const deskripsi = main.c[2];
-    const mJudul = judul.v;
-    const mKategori = kategori.v;
-    const mDeskripsi = deskripsi.v;
+        lkjs.append(container);
+        console.log(main.c[0]);
+        const kategori = main.c[0];
+        console.log(main.c[1]);
+        const judul = main.c[1];
+        console.log(main.c[2]);
+        const deskripsi = main.c[2];
+        const mJudul = judul.v;
+        const mKategori = kategori.v;
+        const mDeskripsi = deskripsi.v;
 
-    const mButton = document.createElement('button');
-    mButton.setAttribute('class', 'collapsible');
-    mButton.innerHTML = mJudul;
+        const mButton = document.createElement('button');
+        mButton.setAttribute('class', 'collapsible');
+        mButton.innerHTML = mJudul;
 
-    const mContent = document.createElement('div');
-    mContent.setAttribute('class', 'content');
+        const mContent = document.createElement('div');
+        mContent.setAttribute('class', 'content');
 
-    const mParaf1 = document.createElement('p');
-    mParaf1.setAttribute('class', 'patobo-8');
-    mParaf1.innerHTML = mKategori;
+        const mParaf1 = document.createElement('p');
+        mParaf1.setAttribute('class', 'patobo-8');
+        mParaf1.innerHTML = mKategori;
 
-    const mParaf2 = document.createElement('p');
-    mParaf2.setAttribute('class', 'patobo-8');
-    mParaf2.innerHTML = mDeskripsi;
+        const mParaf2 = document.createElement('pre');
+        mParaf2.setAttribute('class', 'patobo-8');
+        mParaf2.innerHTML = mDeskripsi;
 
-    container.appendChild(mButton);
-    container.appendChild(mContent);
-    mContent.appendChild(mParaf1);
-    mContent.appendChild(mParaf2);
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-  })
-  console.log(data);
-})
+        container.appendChild(mButton);
+        container.appendChild(mContent);
+        mContent.appendChild(mParaf1);
+        mContent.appendChild(mParaf2);
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    });
+    console.log(data);
+});
