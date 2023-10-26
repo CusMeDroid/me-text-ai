@@ -1,6 +1,8 @@
 let url = 'https://docs.google.com/spreadsheets/d/1ex4zW0WxE3dP7UhtqNrhxY7ufvTWEroau_J_gq-8awM/gviz/tq?';
 const lkjs = document.querySelector('.lkjs');
 const query = encodeURIComponent('Select B,C,D');
+var coll = document.getElementsByClassName("collapsible");
+var i;
 console.log(query);
 url = url + '&tq=' + query;
 
@@ -40,6 +42,18 @@ fetch(url)
     container.appendChild(mContent);
     mContent.appendChild(mParaf1);
     mContent.appendChild(mParaf2);
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
   })
   console.log(data);
 })
