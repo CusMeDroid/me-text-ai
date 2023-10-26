@@ -48,6 +48,17 @@ fetch(url)
         container.appendChild(mButton);
         container.appendChild(mContent);
         mContent.appendChild(mParaf1);
-    })
+        for (data.table.cols = 0; data.table.cols < coll.length; data.table.cols++) {
+            coll[data.table.cols].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    });
     console.log(data);
-})
+});
