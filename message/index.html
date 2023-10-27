@@ -13,6 +13,43 @@
   <body id="myCopyright">
     <div class='lkjs'></div>
     <script type="text/javascript" src="js/main.js"></script>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form id="layform" class="form-container">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+    
+        <button type="submit" onclick="mSend()" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+      <div id="layoutp" class="form-container">
+        <center><h1>Tahap Pertumbuhan</h1></center>
+      </div>
+    </div>
+    
+    <script>
+      function mSend() {
+        var mMsg = document.getElementById("msg");
+        var mLayForm = document.getElementById("layform");
+        var mLayOutp = document.getElementById("layoutp");
+        if (mMsg.value < 1) {
+          alert("Jangan Kosong!");
+        } else {
+          mLayForm.style.display = "none";
+          mLayOutp.style.display = "block";
+        }
+      }
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <script src="https://cusmedroid.github.io/js/disclaimer.js"></script>
   </body>
 </html>
