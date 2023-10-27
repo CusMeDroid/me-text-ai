@@ -39,6 +39,7 @@
     
     <script>
       function mSend() {
+        var mMyForm = document.getElementById("myForm");
         var mMsg = document.getElementById("msg");
         var mLayForm = document.getElementById("layform");
         var mLayOutp = document.getElementById("layoutp");
@@ -52,11 +53,11 @@
         }
       }
       function openForm() {
-        document.getElementById("myForm").style.display = "block";
+        mMyForm.style.display = "block";
       }
       
       function closeForm() {
-        document.getElementById("myForm").style.display = "none";
+        mMyForm.style.display = "none";
       }
       
       function mBack() {
