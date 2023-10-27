@@ -40,11 +40,10 @@
     <script>
       function mSend() {
         var mMsg = document.getElementById("msg");
-        var mOutMsg = document.getElementById("outmsg");
         if (mMsg.value < 1) {
           alert("Jangan Kosong!");
         } else {
-          mOutMsgm.innerHTML = "Tahap Pertumbuhan";
+          mOutMsg = document.getElementById("outmsg").innerHTML = "Tahap Pertumbuhan";
           document.getElementById("layform").style.display = "none";
           document.getElementById("layoutp").style.display = "block";
         }
