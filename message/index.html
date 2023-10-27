@@ -28,9 +28,11 @@
       </div>
       <div id="layoutp" class="form-container">
         <h1>Pesan</h1>
+
+        <label for="msg"><b>Both</b></label>
+        <textarea placeholder="Tulis pesan..." name="msg" id="outmsg" required></textarea>
         
-        <span onclick="mBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</span>
-        <center style="padding:8px;"><h3>Tahap Pertumbuhan</h3></center>
+        <button type="submit" onclick="mBack()" class="btn">Kembali</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
       </div>
     </div>
@@ -40,9 +42,11 @@
         var mMsg = document.getElementById("msg");
         var mLayForm = document.getElementById("layform");
         var mLayOutp = document.getElementById("layoutp");
+        var mOutMsg = document.getElementById("outmsg");
         if (mMsg.value < 1) {
           alert("Jangan Kosong!");
         } else {
+          mOutMsgm.innerHTML = "Tahap Pertumbuhan";
           mLayForm.style.display = "none";
           mLayOutp.style.display = "block";
         }
