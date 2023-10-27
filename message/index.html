@@ -14,22 +14,24 @@
   <body id="myCopyright">
     <div class='lkjs'></div>
     <script type="text/javascript" src="js/main.js"></script>
-    <button class="open-button" onclick="openForm()">Chat</button>
+    <button class="open-button" onclick="openForm()">Pesan <i class="fa fa-commenting-o" aria-hidden="true"></i></button>
 
     <div class="chat-popup" id="myForm">
       <div id="layform" class="form-container">
-        <h1>Chat</h1>
+        <h1>Pesan</h1>
     
-        <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+        <label for="msg"><b>Pesan</b></label>
+        <textarea placeholder="Tulis pesan..." name="msg" id="msg" required></textarea>
     
-        <button type="submit" onclick="mSend()" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="submit" onclick="mSend()" class="btn">Kirim</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
       </div>
       <div id="layoutp" class="form-container">
-        <span onclick="mBack()"><<< Back</span>
+        <h1>Pesan</h1>
+        
+        <span onclick="mBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</span>
         <center style="padding:8px;"><h3>Tahap Pertumbuhan</h3></center>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
       </div>
     </div>
     
