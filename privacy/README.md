@@ -7,7 +7,7 @@
   <li>The application requires access microphone permissions to convert voice to text.</li>
   <li>The application requires access location permissions to get the current location and convert it into text.</li>
 </ul>
-<p>Permissions are required for the app's usability functions, no data is stored by us.<br>
+<p>Permissions are required for the app's usability functions.<br>
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us <a href="mailto:cusmedroidteam@gmail.com">CusMeDroid</a>.</p>
 
 <h2>Log Files</h2>
