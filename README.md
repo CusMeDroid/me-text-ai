@@ -1,5 +1,5 @@
 # Me Text AI
-Adalah kepintaran buatan untuk membantu memudahkan manusia agar dapat menulis teks dari kamera maupun suara.
+Adalah kepintaran buatan, yang dibuat oleh manusia untuk membantu memudahkan manusia lainnya agar dapat menulis teks dari kamera, suara maupun lokasi saat ini serta perintahkan dalam mode pesan untuk mendapatkan jawaban yang sudah disediakan.
 
 # Logo
 [<img alt="Me Text AI" title="Me Text AI" width="20%" src="assets/logo/ic_launcher_metextai_round.png" />](https://cusmedroid.github.io/me-text-ai/assets/logo/ic_launcher_metextai_round.png) [<img alt="Me Text AI" title="Me Text AI" width="20%" src="assets/logo/ic_launcher_metextai.png" />](https://cusmedroid.github.io/me-text-ai/assets/logo/ic_launcher_metextai.png)
@@ -39,7 +39,15 @@ Baca kebijakan [disini](https://cusmedroid.github.io/me-text-ai/privacy/)
 
 # Dasar Bahasa Teks AI
 - English
-- Indonesia (I don't think so)
+- Indonesia (Default)
+
+# Cara Kegunaan
+``` txt
+1. Kamera AI (Izinkan akses kamera untuk penangkapan layar pada ponsel/komputer anda).
+2. Suara AI (Izinkan akses suara untuk mendengarkan perintah suara anda pada ponsel/komputer).
+3. Pesan AI (Masukkan kata yang disediakan di bantuan).
+4. Lokasi AI (Izinkan akses lokasi untuk fitur lokasi anda saat ini pada ponsel/komputer).
+```
 
 # Android
 1. > [WebView Camera](https://cusmedroid.github.io/me-text-ai/camera/)
