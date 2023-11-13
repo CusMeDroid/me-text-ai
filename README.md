@@ -70,4 +70,4 @@ Baca kebijakan [disini](https://cusmedroid.github.io/me-text-ai/privacy/)
 [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_01.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_01.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_02.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_02.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_03.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_03.jpg) [<img alt="Me Text AI" title="Me Text AI" width="23.9%" src="assets/img/ss_04.jpg" />](https://cusmedroid.github.io/me-text-ai/assets/img/ss_04.jpg)
 
 # Rilis
-[Tahap Pertumbuhan]()
+[<img alt="Me Text AI" title="Me Text AI" width="35%" src="assets/download/playstore.png" />](https://play.google.com/store/apps/details?id=cusmedroid.github.io.metextai)
